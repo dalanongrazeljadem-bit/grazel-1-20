@@ -1,12 +1,11 @@
-
 /**
  * Write a description of class number here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-import java.util.Scanner;
-public class number1 
+import java.util.*;
+public class number1
 {
     
     public static void main(String[] args) {
@@ -19,11 +18,13 @@ public class number1
             num =in.nextInt( );
             
         } while ( num < 1 || num > 100);
-        
         number[0] = num;
         
-        System.out.println("Invlid number stored in array: " + number [0]);    
+        System.out.println("You Entered the number: " + number [0]);
         }
     }
-    
 
+
+
+            
+        
