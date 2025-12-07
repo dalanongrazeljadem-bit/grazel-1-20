@@ -1,16 +1,20 @@
 /**
- * Write a description of class number11 here.
+ * Write a description of class seven here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class number11
+import java.util.*;
+public class g11
 {
     public static void main(String[] args) {
-        int[] numbers = {5,10,15,20,25,30,35,40,45,50};
+        int[] numbers = {13, 2, 9, 18, 27};
 
-        for (int i = 0; i < numbers.length; i += 2) {  // even indexes only
-            System.out.println("Index " + i + ": " + numbers[i]);
+        System.out.println("Original Array: " + Arrays.toString(numbers));
+        System.out.println("Elements at even indices:");
+
+        for (int i = 0; i < numbers.length; i += 2) {
+            System.out.println(numbers[i]);
         }
     }
 }
