@@ -1,23 +1,23 @@
 /**
- * Write a description of class number7 here.
+ * Write a description of class seven here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class number7
-{
-   public static void main(String[] args) {
-        int[] numbers = { -5, 3,4,-17 -12, 7, -1 };
+import java.util.*;
+public class f7{
+    public static void main(String[] args) {
+        int[] data = {10, -5, 22, -8, 17};
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < 0) {
-                numbers[i] = -numbers[i]; // convert negative to positive
+        int[] fixedArray = Arrays.copyOf(data, data.length);
+
+        for (int i = 0; i < fixedArray.length; i++) {
+            if (fixedArray[i] < 0) {
+                fixedArray[i] *= -1;  
             }
         }
 
-        // Display result
-        for (int num : numbers) {
-            System.out.print(num + " ");
-        }
+        System.out.println("Initial array: " + Arrays.toString(data));
+        System.out.println("After conversion: " + Arrays.toString(fixedArray));
     }
 }
