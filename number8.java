@@ -1,12 +1,20 @@
-public static void main(String[] args) {
+/**
+ * Write a description of class seven here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+import java.util.*;
+public class g8
+{
+    public static void main(String[] args) {
         int[] A = {10, 20, 30, 40, 50};
-        int[] B = new int[A.length];   // create array B with same size
+        int[] B = new int[A.length]; 
 
         for (int i = 0; i < A.length; i++) {
-            B[i] = A[i];               // copy each element
+            B[i] = A[i];               
         }
 
-        // Display Array B
         for (int num : B) {
             System.out.print(num + " ");
         }
